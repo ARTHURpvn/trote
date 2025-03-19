@@ -52,3 +52,15 @@ img {
 h2 {
     text-align: center;
 }
+
+ol li {
+    padding-bottom: 10px;
+}
+
+table {
+    justify-self: center;
+}
+
+table tr td {
+    padding: 10px;
+}
