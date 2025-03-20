@@ -64,3 +64,42 @@ table {
 table tr td {
     padding: 10px;
 }
+
+table thead tr th {
+    padding: 10px;
+}
+
+tr th {
+    text-align: center;
+}
+
+table tbody tr th {
+    padding: 0 15px;
+}
+
+thead {
+    background: navy;
+    color: white;
+}
+
+.laranja {
+    background: orange;   
+}
+
+.preto {
+    background: black;
+    color: white;
+}
+
+.roxo {
+    background: purple;
+}
+
+.verde {
+    background: green;
+}
+
+.vermelho {
+    background: red;
+}
+
