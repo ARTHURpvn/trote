@@ -103,3 +103,16 @@ thead {
     background: red;
 }
 
+.border-bottom {
+    border-bottom: 1px solid black;
+}
+
+.campos {
+    margin-bottom: 20px
+}
+
+.message {
+    padding: 10px;
+    background-color: rgb(171, 203, 204);
+    border: 1px solid black;
+}
