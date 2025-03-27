@@ -8,10 +8,10 @@
         <script src="js/scripts.js" > </script>
     </head>
     <body>
-        <header> <!-- cabeçalho do corpo da página -->
+        <header> 
             Trote Solidário 2025
         </header>
-        <nav> <!-- barra de navegação (menu de opções) -->
+        <nav>
             <div id="links-menu">
                 <a href="index.html"> Home </a>
                 <a href="introducao.html"> Introdução </a>
@@ -24,22 +24,39 @@
             </div>
             <img src="images/trote.jpg" alt="Trote Solidário"/>
         </nav>
-        <!-- class podemos reutilizar o estilho, id não -->
-<!-- id não pode ser reutilizado pois só temos um elemento por id -->
+
         <div class="container">
             <h2> Calculadoras </h2>
 
-            <form action="">
+            <form>
                 <div class="campos">
-                    <label for="mascote"> Mascote do time</label>
+                    <label for="mascote"> Mascote do time </label>
                     <input type="number" name="mascote" id="mascote">
                 </div>
+                
                 <div class="campos">
-                    <label for="mascote"> Homenagem a um atleta</label>
+                    <label for="homenagem"> Homenagem a um atleta </label>
                     <input type="number" name="homenagem" id="homenagem">
                 </div>
+
                 <div class="campos">
-                    <button type="button" onclick="calcular()">Calcular</button>
+                    <label for="leite"> Quantidade de Litros de leite </label>
+                    <input type="number" name="leite" id="leite">
+                </div>
+
+                <div class="campos">
+                    <label for="kitAvulso"> Kit alimentação (AVULSO) </label>
+                    <input type="number" name="kitAvulso" id="kitAvulso">
+                </div>
+
+                <div class="campos">
+                    <label for="suplementoAvulso"> Suplemento (AVULSO) </label>
+                    <input type="number" name="suplementoAvulso" id="suplementoAvulso">
+                </div>
+
+                <div class="campos">
+                    <button type="button" name="button" onclick="calcular()"> Calcular </button>
+                    <label for="button" id="soma"></label>
                 </div>
             </form>
         </div>

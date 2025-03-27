@@ -9,7 +9,7 @@ header {
     background-color: #28a745;
     color: white;
     /* 15px (espaçamento interno acima e abaixo) e 0px (direita e esquerda)*/
-    padding: 15px 0px;
+    padding: 10px 0px;
     font-size: 24px; 
 }
 nav {
@@ -32,6 +32,11 @@ nav a { /* configura os links do menu */
     border-radius: 5px; /* cantos arredondados */
 }
 
+nav a:hover {
+    background: #025cbd;
+    scale: 110%;
+}
+
 img {
     width: 120px;
     height: auto;
@@ -40,13 +45,11 @@ img {
 }
 
 .container {
-    width: 80%; /* largura de 80% da largura da página */
+    width: 80%;
     background: white;
     border-radius: 10px;
-    /* espaçamento externo 20px acima e abaixo */
-    /* espaçamento externo auto à direita e à esquerda */
     margin: 20px auto;
-    padding: 20px; /* espaçamento interno */ 
+    padding: 20px; 
     text-align: justify;
 }
 h2 {
@@ -71,6 +74,11 @@ table thead tr th {
 
 tr th {
     text-align: center;
+}
+
+table {
+border: 2px solid black;
+  border-collapse: collapse;
 }
 
 table tbody tr th {
@@ -114,5 +122,10 @@ thead {
 .message {
     padding: 10px;
     background-color: rgb(171, 203, 204);
+    border: 1px solid black;
+}
+.message2 {
+    padding: 5px;
+    background-color: rgb(165, 185, 185);
     border: 1px solid black;
 }
