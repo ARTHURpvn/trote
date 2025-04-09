@@ -1,9 +1,21 @@
 function calcular() {
+    let caracterizacao = Number(document.getElementById("caracterizacao").value);
     let mascote = Number(document.getElementById("mascote").value);
     let homenagem = Number(document.getElementById("homenagem").value);
     let leite = Number(document.getElementById("leite").value);
     let kit = Number(document.getElementById("kit").value);
     let suplemento = Number(document.getElementById("suplemento").value);
+    let pct_arroz_5kg = Number(document.getElementById("pct_arroz_5kg").value)
+    let pct_arroz_1kg = Number(document.getElementById("pct_arroz_1kg").value)
+    let pct_feijao_2kg = Number(document.getElementById("pct_feijao_2kg").value)
+    let pct_feijao_1kg = Number(document.getElementById("pct_feijao_1kg").value)
+    let macacao = Number(document.getElementById("macacao").value)
+    let oleo = Number(document.getElementById("oleo").value)
+    let sangue = Number(document.getElementById("sangue").value);
+    let social = Number(document.getElementById("social").value);
+    let arrecadacao = Number(document.getElementById("arrecadacao").value);
+    let acao = Number(document.getElementById("acao").value);
+
     let label = document.getElementById("soma");
     let equipe = document.getElementById("equipe").value;
 
@@ -24,8 +36,12 @@ function calcular() {
             
         }
 
+        if(sangue >= 49) {
+            soma += 2500 + ((sangue - 49) * 20)
+        } else {
+            soma += ((sangue - 49) * 20)
+        }
     }
     
-
     label.innerHTML =  `Soma total: ${soma}`
 }
