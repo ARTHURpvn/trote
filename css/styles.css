@@ -159,3 +159,8 @@ button {
     background-color: #0056b3;
     color: white;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}

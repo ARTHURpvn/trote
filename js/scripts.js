@@ -9,7 +9,7 @@ function calcular() {
     let pct_arroz_1kg = Number(document.getElementById("pct_arroz_1kg").value)
     let pct_feijao_2kg = Number(document.getElementById("pct_feijao_2kg").value)
     let pct_feijao_1kg = Number(document.getElementById("pct_feijao_1kg").value)
-    let macacao = Number(document.getElementById("macacao").value)
+    let macarrao = Number(document.getElementById("macarrao").value)
     let oleo = Number(document.getElementById("oleo").value)
     let sangue = Number(document.getElementById("sangue").value);
     let social = Number(document.getElementById("social").value);
@@ -19,7 +19,7 @@ function calcular() {
     let label = document.getElementById("soma");
     let equipe = document.getElementById("equipe").value;
 
-    let soma = mascote + homenagem + (2* leite)
+    let soma = mascote + homenagem + (leite * 2) + (pct_arroz_5kg * 5) + pct_arroz_1kg + (pct_feijao_2kg * 2) + pct_feijao_1kg + (macarrao * 0.5) + oleo + social + arrecadacao +  + caracterizacao
     
     if(equipe == "Laranja") {
         if(kit >= 97 && suplemento >= 49) {
@@ -39,7 +39,7 @@ function calcular() {
         if(sangue >= 49) {
             soma += 2500 + ((sangue - 49) * 20)
         } else {
-            soma += ((sangue - 49) * 20)
+            soma += ((sangue) * 20)
         }
     }
     
